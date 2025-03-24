@@ -1,2 +1,5 @@
 # Ignorar directorio de salida de Maven
 target/
+.allure/
+allure-results/
+allure-report/

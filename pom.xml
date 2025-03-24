@@ -34,5 +34,23 @@
         <artifactId>junit-jupiter-engine</artifactId>
         <version>5.9.2</version>
     </dependency>
+    <!-- Allure JUnit 5 -->
+    <dependency>
+        <groupId>io.qameta.allure</groupId>
+        <artifactId>allure-junit5</artifactId>
+        <version>2.25.0</version>
+    </dependency>
 </dependencies>
+<build>
+    <plugins>
+        <plugin>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-maven</artifactId>
+            <version>2.11.2</version>
+            <configuration>
+                <resultsDirectory>target/allure-results</resultsDirectory>
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
 </project>
